@@ -1,9 +1,10 @@
 /*
 	@license md-date-time
 	@author SimeonC
+	@contributor Berikin
 	@license 2015 MIT
 	@version 0.0.14
-	
+
 	See README.md for requirements and use.
 */angular.module('mdDateTime', []).directive('timeDatePicker', [
   '$filter', '$sce', '$rootScope', '$parse', function($filter, $sce, $rootScope, $parse) {
