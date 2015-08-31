@@ -21,10 +21,10 @@ angular.module('mdDateTime', [])
 		attrs.$observe 'maxdate', (val) ->
 			if val? and Date.parse val then scope.restrictions.maxdate = new Date val
 		ngModel.$render = -> scope.setDate ngModel.$modelValue
-		
+
 		saveFn = $parse attrs.onSave
 		cancelFn = $parse attrs.onCancel
-		
+
 		scope.save = ->
 			scope._modelValue = scope.date
 			ngModel.$setDirty()
@@ -65,7 +65,7 @@ angular.module('mdDateTime', [])
 			_year: 0
 			_months: []
 			_allMonths: (_dateFilter new Date(0, i), 'MMMM' for i in [0..11])
-			offsetMargin: -> "#{new Date(@_year, @_month).getDay() * 2.7}rem"
+			offsetMargin: -> "#{((new Date(@_year, @_month).getDay() - 1 ) % 7 ) * 2.5}rem"
 			isVisible: (d) -> new Date(@_year, @_month, d).getMonth() is @_month
 			isDisabled: (d) ->
 				currentDate = new Date(@_year, @_month, d)

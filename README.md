@@ -1,8 +1,5 @@
-mdDateTime
+mdDateTime Spanish version
 ===========
-
-[![Build Status](https://travis-ci.org/simeonc/md-date-time.png?branch=master)](https://travis-ci.org/simeonc/md-date-time) [![Coverage Status](https://coveralls.io/repos/simeonc/md-date-time/badge.png)](https://coveralls.io/r/simeonc/md-date-time)
-
 
 ## Requirements
 
@@ -40,7 +37,7 @@ Include script tags similar to the following:
 
 **Via Github**
 
-Download the code from [https://github.com/simeonc/md-date-time/releases/latest](https://github.com/simeonc/md-date-time/releases/latest), unzip the files then add script tags similar to the following:
+Download the code from [https://github.com/berikin/md-date-time/releases/latest](https://github.com/berikin/md-date-time/releases/latest), unzip the files then add script tags similar to the following:
 ```html
 <link rel='stylesheet' href='/path/to/unzipped/files/md-date-time/dist/md-date-time.css'>
 <script src='/path/to/unzipped/files/md-date-time/dist/md-date-time.js'></script>
@@ -94,6 +91,6 @@ This project is licensed under the [MIT license](http://opensource.org/licenses/
 
 ## Contributers
 
-Special thanks to all the contributions thus far! 
+Special thanks to all the contributions thus far!
 
 For a full list see: https://github.com/simeonc/md-date-time/graphs/contributors

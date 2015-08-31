@@ -33,6 +33,7 @@
   height: 100%;
   cursor: pointer;
   transition: color 0.6s ease-in-out;
+  -webkit-transition: color 0.6s ease-in-out;
 }
 .time-date > .display > .title {
   background-color: #00796b;
@@ -80,6 +81,7 @@
   position: absolute !important;
   width: 200%;
   transition: left 0.6s ease-in-out;
+  -webkit-transition: left 0.6s ease-in-out;
 }
 .time-date > .control > .slider > .date-control,
 .time-date > .control > .slider > .time-control,
@@ -322,6 +324,7 @@
   width: 100%;
   height: auto;
   transition: color 0.6s ease-in-out, height 0.6s ease-in-out;
+  -webkit-transition: color 0.6s ease-in-out, height 0.6s ease-in-out;
 }
 .time-date.vertical > .display > .content {
   position: relative;
@@ -369,6 +372,7 @@
     width: 100%;
     height: auto;
     transition: color 0.6s ease-in-out, height 0.6s ease-in-out;
+    -webkit-transition: color 0.6s ease-in-out, height 0.6s ease-in-out;
   }
   .time-date > .display > .content {
     position: relative;
