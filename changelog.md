@@ -1,3 +1,7 @@
+### 0.0.16 (2015-08-31)
+
+* **release:** Minor bump version.
+
 ### 0.0.15 (2015-08-31)
 
 * **release:** Spanish version with Monday as first week day. ([9269869](https://github.com/berikin/md-date-time/commit/92698695c6c36232e8e60655ed607ce06b6062bc))

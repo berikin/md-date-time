@@ -60,8 +60,8 @@ Download the code from [https://github.com/berikin/md-date-time/releases/latest]
 * **display-mode** Options are "full"; display time and date selectors and no display, "time"; show only the time input, "date"; show only the date input
 * **orientation** If this string value is 'true' then the picker will be in vertical mode. Otherwise it will change to vertical mode if the screen width is less than 51rem as that is the size of the editor
 * **display-twentyfour** If this value is truthy then display 24 hours in time, else use 12 hour time.
-* **mindate** *Under Construction!*
-* **maxdate** *Under Construction!*
+* **mindate** Sets min available date. Calendar will show days only within this range.
+* **maxdate** Sets max available Date. Calendar will show days only within this range.
 
 
 ### Issues?
