@@ -51,14 +51,15 @@ gulp.task 'compile:javascript', ['compile:coffee'], ->
 		.pipe concat.header """/*
 			@license md-date-time
 			@author SimeonC
+			@contributor Berikin
 			@license 2015 MIT
 			@version #{pkg.version}
-			
+
 			See README.md for requirements and use.
 		*/
 		"""
 		.pipe gulp.dest 'dist'
-	
+
 gulp.task 'compile:stylus', ['clean:dist'], ->
 	pkg = JSON.parse fs.readFileSync './package.json', 'utf8'
 	gulp.src ['./src/styles.styl']
@@ -68,9 +69,10 @@ gulp.task 'compile:stylus', ['clean:dist'], ->
 		.pipe concat.header """/*
 			@license md-date-time
 			@author SimeonC
+			@contributor Berikin
 			@license 2015 MIT
 			@version #{pkg.version}
-			
+
 			See README.md for requirements and use.
 		*/
 		"""
@@ -82,14 +84,14 @@ gulp.task 'compile', ['compile:main'], (cb) -> del ['dist/*.temp'], cb
 
 ###
 	Bumping version number and tagging the repository with it.
-	
+
 	You can use the commands
-		
+
 		gulp prerel		# makes v0.1.0 -> v0.1.1-pre1
 		gulp patch		# makes v0.1.0 → v0.1.1
 		gulp minor		# makes v0.1.1 → v0.2.0
 		gulp major		# makes v0.2.1 → v1.0.0
-	
+
 	To bump the version numbers accordingly after you did a patch,
 	introduced a feature or made a backwards-incompatible release.
 ###
@@ -128,7 +130,7 @@ gulp.task 'prerel', ->
 		, 'compile'
 		, 'tagversion'
 	)
-gulp.task 'patch', -> 
+gulp.task 'patch', ->
 	runSequence(
 		'release:patch'
 		, 'changelog'
